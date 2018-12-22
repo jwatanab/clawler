@@ -46,7 +46,7 @@ urllib3==1.24.1
 
 $ git clone https://github.com/watanabeJunna/crwler.git
 
-$ cd crwler
+$ cd clawler
 
 $ python clawler.py
 usage:   python crawler.py [username] [password] [keyword]
