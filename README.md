@@ -1,6 +1,4 @@
-# crwler
-
-### setup
+# instgram clawler
 
 ```sh
 $ cat /etc/system-release
@@ -46,6 +44,13 @@ $ pip freeze
 selenium==3.141.0
 urllib3==1.24.1
 
-$ git clone 
+$ git clone https://github.com/watanabeJunna/crwler.git
+
+$ cd crwler
+
+$ python clawler.py
+usage:   python crawler.py [username] [password] [keyword]
+example: python crawler.py user c8can1!!0_ python3
 
 ```
+
