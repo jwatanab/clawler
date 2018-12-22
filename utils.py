@@ -1,5 +1,3 @@
-
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
@@ -41,7 +39,7 @@ def get_logged_driver(username, password):
     except:
       raise "Could not log in"
 
-  except:
+  except Exception as e:
     driver.quit()
     raise e
 
