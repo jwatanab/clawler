@@ -29,8 +29,8 @@ try:
     sleep()
     driver.implicitly_wait(10)
 
-    dynamic_classname = driver.find_element_by_css_selector('a div img').get_attribute('class')
-    driver.find_element_by_xpath(f"//img[@class='{dynamic_classname}']/ancestor-or-self::a").click()
+    target = driver.find_element_by_css_selector('a div img').get_attribute('class')
+    driver.find_element_by_xpath(f"//img[@class='{target}']/ancestor-or-self::a").click()
 
     driver.find_element_by_css_selector("[role=dialog] button [aria-label=いいね！]").click()
     time.sleep(2)
@@ -41,7 +41,7 @@ try:
       driver.find_element_by_css_selector("[role=dialog] button [aria-label=いいね！]").click()
       time.sleep(2)
       if c != 0 and c % INTERVAL == 0:
-          time.sleep(120)
+        time.sleep(120)
 except Exception as e:
   raise e
 finally:
