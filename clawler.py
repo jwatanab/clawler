@@ -10,7 +10,7 @@ driver = None
 sys.argv.pop(0)
 
 if len(sys.argv) != 3:
-  print(("usage:   python crawler.py [username] [password] [keyword]\n"
+  print(("usage:   python crawler.py [username] [password] [*keywords]\n"
          "example: python crawler.py user c8can1!!0_ python3"))
   sys.exit(1)
   
