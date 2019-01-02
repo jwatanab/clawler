@@ -33,13 +33,13 @@ try:
     driver.find_element_by_xpath(f"//img[@class='{target}']/ancestor-or-self::a").click()
 
     driver.find_element_by_css_selector("[role=dialog] button [aria-label=いいね！]").click()
-    time.sleep(2)
+    sleep()
 
     for c in range(LIMIT):
       driver.find_element_by_css_selector(".coreSpriteRightPaginationArrow").click()
-      time.sleep(2)
+      sleep()
       driver.find_element_by_css_selector("[role=dialog] button [aria-label=いいね！]").click()
-      time.sleep(2)
+      sleep()
       if c != 0 and c % INTERVAL == 0:
         time.sleep(120)
 except Exception as e:
